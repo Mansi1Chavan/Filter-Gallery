@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Filterable Gallery</h1>
+    <h2>Add Product</h2>
+
+    <div class="flex" id = main-div>
+    <p>Enter image URL: </p>
+    <input type='text' placeholder="Enter URL Here" name="url" id="url">
+   <p> Select Type:</p>
+    <select id ='filter'>
+        <option id="lappi" value="laptop">laptop</option>
+        <option id='headphone' value="Headphone">Headphone</option>
+        <option id  ='mobile' value="Mobile">Mobile</option>
+    </select>
+    <button id="add">Add</button>
+</form>
+
+<div class="priority" id = 'priority'>
+    <button class="all" onclick="filterObj('all')">All</button>
+    <button class="all" onclick="filterObj('laptop')">Laptop</button>
+    <button class="all" onclick="filterObj('headphone')">Headphone</button>
+    <button class="all" onclick="filterObj('mobile')">Mobile</button>
+</div>
+
+<div id="empty"></div>
+<script src="app.js"></script>
+</body>
+</html>
